@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnatrixUmbraco", "OnatrixUmbraco\OnatrixUmbraco.csproj", "{18A9DE0C-4B94-4A06-98AC-90F0C5383698}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18A9DE0C-4B94-4A06-98AC-90F0C5383698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A9DE0C-4B94-4A06-98AC-90F0C5383698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A9DE0C-4B94-4A06-98AC-90F0C5383698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A9DE0C-4B94-4A06-98AC-90F0C5383698}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C84D8633-7EC7-422F-98BC-2CC09B7F9486}
+	EndGlobalSection
+EndGlobal
