@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  width: 1920px;
+  width: 100%;
 }
 
 .wrapper {
@@ -10,11 +10,10 @@ body {
 }
 .wrapper header {
   height: 131px;
-  width: 1920px;
+  width: auto;
 }
 .wrapper header .GreenBox {
   height: 49px;
-  width: 1920px;
   background-color: #4F5955;
 }
 .wrapper header .GreenBox .GreenBoxInput {
@@ -80,30 +79,29 @@ body {
 }
 .wrapper main .Hero img {
   position: absolute;
-  width: 1920px;
 }
-.wrapper main .Hero .HeroTextBox {
+.wrapper main .Hero .HeroTextbox {
   position: relative;
   margin-left: 375px;
   padding-top: 115px;
 }
-.wrapper main .Hero .HeroTextBox h1 {
+.wrapper main .Hero .HeroTextbox h1 {
   font-weight: bold;
   color: #4F5955;
 }
-.wrapper main .Hero .HeroTextBox p {
+.wrapper main .Hero .HeroTextbox p {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.wrapper main .Hero .HeroTextBox a {
+.wrapper main .Hero .HeroTextbox a {
   text-decoration: none;
   padding: 12px 30px;
   background-color: #4F5955;
-  border-radius: 5%;
+  border-radius: 5px;
   color: white;
   font-weight: bold;
 }
-.wrapper main .Hero .HeroTextBox a:hover {
+.wrapper main .Hero .HeroTextbox a:hover {
   background-color: #343b38;
 }
 .wrapper main .AboutUs {
@@ -175,7 +173,7 @@ body {
   background-color: #F2EDDC;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   font-weight: bold;
-  color: rgb(105, 105, 105);
+  color: gray;
 }
 .wrapper main .AboutUs .AboutUsForm .AboutUsTextAndForm .InputAboutUs button:hover {
   background-color: #e9e1c7;
@@ -184,41 +182,41 @@ body {
   width: 1920px;
   height: 1237px;
   margin-top: 50px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
-.wrapper main .OurServices .OurServiceTextBox {
+.wrapper main .OurServices .OurServicesTextBox {
   display: flex;
   justify-content: center;
   padding-top: 80px;
 }
-.wrapper main .OurServices .OurServiceTextBox .OurServicesText h2 {
-  font-weight: bold;
-  color: #4F5955;
-}
-.wrapper main .OurServices .OurServiceTextBox .OurServicesText h2 span {
-  margin-left: 30px;
-}
-.wrapper main .OurServices .OurServiceTextBox .OurServicesText p {
+.wrapper main .OurServices .OurServicesTextBox .OurServicesText p {
   margin-left: 150px;
   color: #D9C3A9;
 }
-.wrapper main .OurServices .OurServicesBoxes .OurServicesUp, .wrapper main .OurServices .OurServicesBoxes .OurServicesDown {
+.wrapper main .OurServices .OurServicesTextBox .OurServicesText h2 {
+  color: #4F5955;
+  font-weight: bold;
+}
+.wrapper main .OurServices .OurServicesTextBox .OurServicesText h2 span {
+  margin-left: 30px;
+}
+.wrapper main .OurServices .OurServicesUp, .wrapper main .OurServices .OurServicesDown {
   display: flex;
   justify-content: center;
   gap: 43px;
   margin-top: 47px;
 }
-.wrapper main .OurServices .OurServicesBoxes .OurServicesUp a, .wrapper main .OurServices .OurServicesBoxes .OurServicesDown a {
+.wrapper main .OurServices .OurServicesUp a, .wrapper main .OurServices .OurServicesDown a {
   text-decoration: none;
   color: black;
 }
-.wrapper main .OurServices .OurServicesBoxes .OurServicesUp a .OursServicesBox, .wrapper main .OurServices .OurServicesBoxes .OurServicesDown a .OursServicesBox {
+.wrapper main .OurServices .OurServicesUp a .OurServicesBox, .wrapper main .OurServices .OurServicesDown a .OurServicesBox {
   width: 370px;
   height: 423px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.wrapper main .OurServices .OurServicesBoxes .OurServicesUp a .OursServicesBox h6, .wrapper main .OurServices .OurServicesBoxes .OurServicesDown a .OursServicesBox h6 {
+.wrapper main .OurServices .OurServicesUp a .OurServicesBox h6, .wrapper main .OurServices .OurServicesDown a .OurServicesBox h6 {
   display: flex;
   justify-content: center;
   padding-top: 30px;
@@ -227,12 +225,12 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
-.wrapper main .OurServices .OurServicesBoxes .OurServicesUp a .OursServicesBox p, .wrapper main .OurServices .OurServicesBoxes .OurServicesDown a .OursServicesBox p {
+.wrapper main .OurServices .OurServicesUp a .OurServicesBox p, .wrapper main .OurServices .OurServicesDown a .OurServicesBox p {
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
-.wrapper main .OurServices .OurServicesBoxes .OurServicesUp a .OursServicesBox:hover, .wrapper main .OurServices .OurServicesBoxes .OurServicesDown a .OursServicesBox:hover {
+.wrapper main .OurServices .OurServicesUp a .OurServicesBox:hover, .wrapper main .OurServices .OurServicesDown a .OurServicesBox:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .wrapper main .OurStory {
@@ -246,14 +244,13 @@ body {
   margin-top: 130px;
 }
 .wrapper main .OurStory .OurStoryBox .OurStoryText h2 {
-  font-weight: bold;
   margin-left: 100px;
   margin-bottom: 30px;
-  color: #4F5955;
 }
 .wrapper main .OurStory .OurStoryBox .OurStoryText h2 span {
-  color: #D9C3A9;
   margin-left: 100px;
+  color: #D9C3A9;
+  font-weight: bold;
 }
 .wrapper main .OurStory .OurStoryBox .OurStoryText p span {
   margin-left: 100px;
@@ -261,14 +258,14 @@ body {
 .wrapper main .OurStory .OurStoryBox .OurStoryText a {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
   margin-bottom: 80px;
-  margin-left: 200px;
+  margin-top: 30px;
   text-decoration: none;
   color: #F2EDDC;
   width: 150px;
   background-color: #4F5955;
   padding: 15px 15px;
+  margin-left: 200px;
   border-radius: 5px;
 }
 .wrapper main .OurStory .OurStoryBox .OurStoryText a:hover {
@@ -284,44 +281,44 @@ body {
   height: 838px;
   background-color: #4F5955;
 }
-.wrapper main .SuccessStories .SuccessStoryPic {
+.wrapper main .SuccessStories .SuccessStoryBigBox {
   display: flex;
   justify-content: center;
 }
-.wrapper main .SuccessStories .StoriesBigBox {
-  display: flex;
-  justify-content: center;
-}
-.wrapper main .SuccessStories .StoriesBigBox .StoriesChildBox .StoriesTextBox {
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryChildTextBox {
   margin-top: 100px;
-  display: flex;
-  justify-content: center;
 }
-.wrapper main .SuccessStories .StoriesBigBox .StoriesChildBox .StoriesTextBox .StoriesChildTextBox p {
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryChildTextBox .SuccesStoryTextBox p {
   display: flex;
   justify-content: center;
   color: #D9C3A9;
 }
-.wrapper main .SuccessStories .StoriesBigBox .StoriesChildBox .StoriesTextBox .StoriesChildTextBox h4 {
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryChildTextBox .SuccesStoryTextBox h4 {
+  display: flex;
+  justify-content: center;
   color: white;
 }
-.wrapper main .SuccessStories .StoriesBigBox .StoriesChildBox .StoryNumberBox {
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryNumber {
   display: flex;
   gap: 90px;
   margin-top: 80px;
   margin-bottom: 80px;
 }
-.wrapper main .SuccessStories .StoriesBigBox .StoriesChildBox .StoryNumberBox .NumberBox h2 {
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryNumber .NumberBox h2 {
   display: flex;
   justify-content: center;
   color: #D9C3A9;
   font-size: 70px;
 }
-.wrapper main .SuccessStories .StoriesBigBox .StoriesChildBox .StoryNumberBox .NumberBox p {
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryNumber .NumberBox p {
   color: white;
   font-weight: bold;
 }
-.wrapper main .SuccessStories .StoriesBigBox .StoriesChildBox .StoryNumberBox .NumberBox p span {
+.wrapper main .SuccessStories .SuccessStoryBigBox .SuccessStoryChildBox .SuccessStoryNumber .NumberBox p span {
+  display: flex;
+  justify-content: center;
+}
+.wrapper main .SuccessStories .SuccesStorypPic {
   display: flex;
   justify-content: center;
 }
@@ -331,28 +328,28 @@ body {
   background-color: white;
   padding-top: 266px;
 }
-.wrapper main .OurProjects .OurProjectsBigTextBox {
+.wrapper main .OurProjects .OurProjectsBigBox {
   width: 960px;
   display: flex;
   justify-content: space-around;
 }
-.wrapper main .OurProjects .OurProjectsBigTextBox p {
+.wrapper main .OurProjects .OurProjectsBigBox .OurProjectTextBox p {
   color: #D9C3A9;
 }
-.wrapper main .OurProjects .OurProjectsBoxes {
+.wrapper main .OurProjects .OurProjectBoxes {
   width: 1920px;
   height: 480px;
   display: flex;
 }
-.wrapper main .OurProjects .OurProjectsBoxes .OurProjectsBox {
+.wrapper main .OurProjects .OurProjectBoxes .OurProjectPicBox {
   width: 480px;
   height: 480px;
   position: relative;
 }
-.wrapper main .OurProjects .OurProjectsBoxes .OurProjectsBox img {
+.wrapper main .OurProjects .OurProjectBoxes .OurProjectPicBox img {
   position: absolute;
 }
-.wrapper main .OurProjects .OurProjectsBoxes .OurProjectsBox .OurProjectsGreenBox {
+.wrapper main .OurProjects .OurProjectBoxes .OurProjectPicBox .OurProjectGreenBox {
   margin-top: 400px;
   width: 480px;
   height: 92px;
@@ -360,20 +357,19 @@ body {
   position: absolute;
   color: white;
 }
-.wrapper main .OurProjects .OurProjectsBoxes .OurProjectsBox .OurProjectsGreenBox h6 {
+.wrapper main .OurProjects .OurProjectBoxes .OurProjectPicBox .OurProjectGreenBox h6 {
   padding-left: 20px;
 }
-.wrapper main .OurProjects .OurProjectsBoxes .OurProjectsBox .OurProjectsGreenBox p {
+.wrapper main .OurProjects .OurProjectBoxes .OurProjectPicBox .OurProjectGreenBox p {
   padding-left: 20px;
 }
 .wrapper footer {
   bottom: 0;
-  width: 1920px;
+  width: 100%;
 }
 .wrapper footer .WhiteBox {
   display: flex;
   height: 220px;
-  width: 1920px;
   align-items: center;
 }
 .wrapper footer .WhiteBox img {
@@ -381,7 +377,6 @@ body {
 }
 .wrapper footer .BlackBox {
   height: 64px;
-  width: 100%;
   background-color: #0E0E0E;
 }
 .wrapper footer .BlackBox p {

@@ -1,0 +1,385 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "mainLayout.cshtml";
+}
+
+
+<body>
+
+<div class="wrapper">
+    <header>
+        <div class="GreenBox">
+            <div class="GreenBoxInput">
+                <div class="AddressText">
+                    <p>Klarabergsviadukten 90, 111 64 Stockholm</p>
+                </div>
+
+                <div class="SocialMediaButtons">
+                    <a href="#"><div><i class="fa-brands fa-facebook"></i></div></a>
+                    <a href="#"><div><i class="fa-brands fa-twitter"></i></div></a>
+                    <a href="#"><div><i class="fa-brands fa-linkedin-in"></i></div></a>
+                </div>    
+            </div>
+            
+        </div>
+
+        <div class="WhiteBox">
+            <div class="LogoAndButtons">
+                <div class="ImageLogo">
+                    <a href="/Home">
+                    @if (Model.Value<IPublishedContent>("headerLogo") != null)
+                            {
+                                var headerLogo = Model.Value<IPublishedContent>("headerLogo").Url();
+                                <img src="@headerLogo" alt="headerLogo ">   
+                            }
+                            else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+                    </a>
+                </div>  
+                <div class="HeaderButtons">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact</a>
+                </div>
+                
+            </div>
+
+            <div class="SearchBar">
+                <input type="text" placeholder="Search..">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            
+
+        </div>
+    </header>  
+
+<main>
+
+    <section class="AboutUs">
+        <div class="AboutUsbox">
+            <div class="AboutUsText">
+                <h2>
+                    @Model.Value("aboutUsTitle")
+                </h2>
+                <p>
+                    @Model.Value("aboutUsText")
+                </p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="TinaFox">
+            <div class="TinaFoxPic">
+                 @if (Model.Value<IPublishedContent>("tinaFoxPicture") != null)
+                            {
+                                var tinaFoxPicture = Model.Value<IPublishedContent>("tinaFoxPicture").Url();
+                                <img src="@tinaFoxPicture" alt="tinaFoxPicture ">   
+                            }
+                            else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+              
+                <p>
+                   @Model.Value("tinaFoxText")
+                </p>
+            </div>
+            <div class="TinaFoxTextBox">
+                <h5>
+                    @Model.Value("tinaFoxTitle")
+                </h5>
+
+                <p>
+                   @Model.Value("tinaFoxMainText")
+                </p>
+
+            </div>
+
+
+       
+
+    </section>
+
+    <section class="Reviews">
+        
+        <div class="ReviewsText">
+
+            <p id="yellowText">
+               @Model.Value("reviewsTitle")
+            </p>
+
+            <h3>
+                @Model.Value("reviewsText")
+            </h3>
+
+            <p>
+                @Model.Value("reviwsMainText")
+            </p>
+
+            
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            
+
+            <p>
+                Kevin Gardner
+            </p>
+
+            <p>
+                Swebank
+            </p>
+
+
+        </div>
+
+        <div class="ReviewsPic">
+             @if (Model.Value<IPublishedContent>("reviewsPicture") != null)
+                            {
+                                var reviewsPicture = Model.Value<IPublishedContent>("reviewsPicture").Url();
+                                <img src="@reviewsPicture" alt="reviewsPicture ">   
+                            }
+                            else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+
+        </div>
+
+    </section>    
+
+    <section class="OurExpert">
+         <div class="OurExpertText">
+            <div>
+                <p>
+                  @Model.Value("ourExpertTitle")
+                </p>
+                <h2>
+                   @Model.Value("ourExpertText")
+                </h2>
+            </div>
+         </div>
+         <div class="OurExpertTopBoxes">
+            <div class="OurExpertTopBox">
+                  @if (Model.Value<IPublishedContent>("ourExpertBoxOnePicture") != null)
+                            {
+                                var ourExpertBoxOnePicture = Model.Value<IPublishedContent>("ourExpertBoxOnePicture").Url();
+                                <img src="@ourExpertBoxOnePicture" alt="ourExpertBoxOnePicture ">   
+                            }
+                            else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+                
+                <h6>
+                    @Model.Value("ourExpertBoxOneTitle")
+                </h6>
+                <p>
+                    @Model.Value("ourExpertBoxOneText")
+                </p>
+            </div>
+            <div class="OurExpertTopBox">
+                   @if (Model.Value<IPublishedContent>("ourExpertBoxTwoPicture") != null)
+                            {
+                                var ourExpertBoxTwoPicture = Model.Value<IPublishedContent>("ourExpertBoxTwoPicture").Url();
+                                <img src="@ourExpertBoxTwoPicture" alt="ourExpertBoxTwoPicture ">   
+                            }
+                            else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+            
+                <h6>
+                   @Model.Value("ourExpertBoxTwoTitle")
+                </h6>
+                <p>
+                   @Model.Value("ourExpertBoxTwoText")
+                </p>
+            </div>
+            <div class="OurExpertTopBox">
+
+                  @if (Model.Value<IPublishedContent>("ourExpertBoxThreePicture") != null)
+                            {
+                                var ourExpertBoxThreePicture = Model.Value<IPublishedContent>("ourExpertBoxThreePicture").Url();
+                                <img src="@ourExpertBoxThreePicture" alt="ourExpertBoxThreePicture ">   
+                            }
+                            else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+                
+                <h6>
+                    @Model.Value("ourExpertBoxThreeTitle")
+                </h6>
+                <p>
+                    @Model.Value("ourExpertBoxThreeText")
+                </p>
+            </div> 
+         
+        </div>
+        <div class="OurExpertBottomBoxes">
+            
+            <div class="OurExpertBottomBox">
+                @if (Model.Value<IPublishedContent>("ourExpertBoxFourPicture") != null)
+                            {
+                                var ourExpertBoxFourPicture = Model.Value<IPublishedContent>("ourExpertBoxFourPicture").Url();
+                                <img src="@ourExpertBoxFourPicture" alt="ourExpertBoxFourPicture ">   
+                            }
+                            else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+           
+                <h6>
+                   @Model.Value("ourExpertBoxFourTitle")
+                </h6>
+                <p>
+                    @Model.Value("ourExpertBoxFourText")
+                </p>
+
+            </div>
+                <div class="OurExpertBottomBox">
+                       @if (Model.Value<IPublishedContent>("ourExpertBoxFivePicture") != null)
+                            {
+                                var ourExpertBoxFivePicture = Model.Value<IPublishedContent>("ourExpertBoxFivePicture").Url();
+                                <img src="@ourExpertBoxFivePicture" alt="ourExpertBoxFivePicture ">   
+                            }
+                            else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+                 
+                    <h6>
+                        @Model.Value("ourExpertBoxFiveTitle")
+                    </h6>
+                    <p> 
+                        @Model.Value("ourExpertBoxFiveText")
+                    </p>
+                </div>
+                <div class="OurExpertBottomBox">
+                     @if (Model.Value<IPublishedContent>("ourExpertBoxSixPicture") != null)
+                            {
+                                var ourExpertBoxSixPicture = Model.Value<IPublishedContent>("ourExpertBoxSixPicture").Url();
+                                <img src="@ourExpertBoxSixPicture" alt="ourExpertBoxSixPicture ">   
+                            }
+                            else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+                    
+                    <h6>
+                        @Model.Value("ourExpertBoxSixTitle")
+                    </h6>
+                    <p>
+                        @Model.Value("ourExpertBoxSixText")
+                    </p>
+                </div>
+                <div class="OurExpertBottomBox">
+                     @if (Model.Value<IPublishedContent>("ourExpertBoxSevenPicture") != null)
+                            {
+                                var ourExpertBoxSevenPicture = Model.Value<IPublishedContent>("ourExpertBoxSevenPicture").Url();
+                                <img src="@ourExpertBoxSevenPicture" alt="ourExpertBoxSevenPicture ">   
+                            }
+                            else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+               
+                    <h6>
+                        @Model.Value("ourExpertBoxSevenTitle")
+                    </h6>
+                    <p>
+                        @Model.Value("ourExpertBoxSevenText")
+                    </p>
+                </div>
+         </div>
+    </section>
+
+    <section class="ContactInformation">
+        <div class="ContactPicture">
+             @if (Model.Value<IPublishedContent>("contactInformationPicture") != null)
+                            {
+                                var contactInformationPicture = Model.Value<IPublishedContent>("contactInformationPicture").Url();
+                                <img src="@contactInformationPicture" alt="contactInformationPicture ">   
+                            }
+                            else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+           
+        </div>
+
+        <div class="ContactText">
+            <div>
+                <h2>
+                    @Model.Value("contactInformationTitle")
+                </h2>
+
+                <div class="Contact">
+                    <div class="ContactChild">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h6>@Model.Value("contactInformationLocation")</h6>
+                    </div>
+
+
+                    <p>@Model.Value("contactInformationAddress")</p>
+                </div>
+
+
+                <div class="Contact">
+                    <div class="ContactChild">
+                        <i class="fa-solid fa-phone"></i>
+                        <h6>@Model.Value("contactInformationPhone")</h6>
+                    </div> 
+                    <p>@Model.Value("contactInformationPhoneNumber")</p>
+                </div>
+
+                <div class="Contact">
+                    <div class="ContactChild">
+                        <i class="fa-regular fa-envelope"></i>
+                        <h6>@Model.Value("contactInformationEmail")</h6>
+                    </div>
+                    <p>@Model.Value("contactInformationEmailAddress")</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+    <footer>
+        <div class="WhiteBox">
+               @if (Model.Value<IPublishedContent>("footerPicture") != null)
+                            {
+                                var footerPicture = Model.Value<IPublishedContent>("footerPicture").Url();
+                                <img src="@footerPicture" alt="footerPicture ">   
+                            }
+                            else
+                            {
+                                <p>Ingen bild tillgänglig</p>
+                            }
+        
+        </div>
+
+        <div class="BlackBox">
+            <p>© Onatrix. All Rights Reserved. Credits to <span>Themesflat</span></p>
+        </div>
+    </footer>
+
+</div>
+
+
+
+    
+</body>
