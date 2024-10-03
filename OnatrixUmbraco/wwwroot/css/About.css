@@ -89,7 +89,7 @@ main .AboutUs .AboutUsbox {
   display: flex;
   justify-content: center;
   padding-top: 90px;
-  margin-left: 500px;
+  
 }
 main .AboutUs .AboutUsbox .AboutUsText h2 {
   font-weight: bold;
