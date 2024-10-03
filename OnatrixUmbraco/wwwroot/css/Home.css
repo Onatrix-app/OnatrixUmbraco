@@ -130,6 +130,7 @@ body {
   height: 570px;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
 }
 .wrapper main .AboutUs .AboutUsForm:hover {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -138,6 +139,7 @@ body {
   background-color: #4F5955;
   width: 470px;
   height: 105px;
+  
 }
 .wrapper main .AboutUs .AboutUsForm .AboutUsGreenBox h3 {
   padding-top: 30px;
